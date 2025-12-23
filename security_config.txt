@@ -142,7 +142,7 @@ bbox-border-color3=0;1;0;1
 interval=0
 gie-unique-id=1
 nvbuf-memory-type=0
-config-file=config_infer_primary.txt
+config-file=/opt/nvidia/deepstream/deepstream/samples/configs/deepstream-app/config_infer_primary.txt
 
 [tracker]
 enable=1
@@ -160,7 +160,7 @@ gpu-id=0
 display-tracking-id=1
 
 [secondary-gie0]
-enable=1
+enable=0
 model-engine-file=../../models/Secondary_VehicleTypes/resnet18_vehicletypenet_pruned.onnx_b16_gpu0_int8.engine
 gpu-id=0
 batch-size=16
@@ -170,7 +170,7 @@ operate-on-class-ids=0;
 config-file=config_infer_secondary_vehicletypes.txt
 
 [secondary-gie1]
-enable=1
+enable=0
 model-engine-file=../../models/Secondary_VehicleMake/resnet18_vehiclemakenet_pruned.onnx_b16_gpu0_int8.engine
 batch-size=16
 gpu-id=0
@@ -180,4 +180,4 @@ operate-on-class-ids=0;
 config-file=config_infer_secondary_vehiclemake.txt
 
 [tests]
-file-loop=1
+file-loop=0
